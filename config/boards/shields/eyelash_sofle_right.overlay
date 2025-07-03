@@ -1,0 +1,3 @@
+&nice_view { 
+    status = "disabled"; // disable right side oled only
+};
