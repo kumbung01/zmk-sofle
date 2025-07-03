@@ -39,6 +39,7 @@
         lang {
             bindings = <&kp RALT>;
             key-positions = <34 35>;
+            layers = <0 3>;
         };
     };
 
@@ -56,6 +57,13 @@
             bindings = <&kp EQUAL &kp GT>;
             label = "ARROW2";
         };
+
+        layer_shift: layer_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LSHFT &mo 2>;
+            label = "LAYER_SHIFT";
+        };
     };
 
     behaviors {
@@ -66,11 +74,11 @@
 
         BASE {
             bindings = <
-&kp ESC     &kp N1    &kp N2        &kp N3          &kp N4     &kp N5       &tog 3           &kp N6      &kp N7           &kp N8     &kp N9   &kp N0    &kp BACKSLASH
-&kp TAB     &kp Q     &kp W         &kp E           &kp R      &kp T        &tog 5           &kp Y       &kp U            &kp I      &kp O    &kp P     &kp BACKSPACE
-&mo 1       &kp A     &kp S         &kp D           &kp F      &kp G        &kp LEFT_ARROW   &kp H       &kp J            &kp K      &kp L    &kp SEMI  &kp APOS
-&mo 2       &kp Z     &kp X         &kp C           &kp V      &kp B        &kp RIGHT_ARROW  &kp N       &kp M            &kp COMMA  &kp DOT  &kp FSLH  &trans
-&kp C_MUTE  &kp LALT  &kp LEFT_GUI  &kp UNDERSCORE  &kp SPACE  &kp LCTRL    &kp ENTER        &kp ESCAPE  &sk RIGHT_SHIFT  &kp ENTER  &mo 4    &kp RGUI
+&kp ESC       &kp N1    &kp N2     &kp N3     &kp N4     &kp N5    &tog 3           &kp N6      &kp N7           &kp N8     &kp N9   &kp N0    &kp BACKSLASH
+&kp TAB       &kp Q     &kp W      &kp E      &kp R      &kp T     &tog 5           &kp Y       &kp U            &kp I      &kp O    &kp P     &kp BACKSPACE
+&mo 1         &kp A     &kp S      &kp D      &kp F      &kp G     &kp LEFT_ARROW   &kp H       &kp J            &kp K      &kp L    &kp SEMI  &kp APOS
+&layer_shift  &kp Z     &kp X      &kp C      &kp V      &kp B     &kp RIGHT_ARROW  &kp N       &kp M            &kp COMMA  &kp DOT  &kp FSLH  &trans
+&kp C_MUTE    &kp LALT  &kp LCTRL  &kp SPACE  &kp UNDER  &mo 5     &kp ENTER        &kp ESCAPE  &sk RIGHT_SHIFT  &kp ENTER  &mo 4    &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -99,11 +107,11 @@
 
         GAME {
             bindings = <
-&kp GRAVE  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp B      &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &kp C   &kp SPACE  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp GRAVE  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp B      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &kp C   &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
