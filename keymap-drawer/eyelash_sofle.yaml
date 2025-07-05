@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
   - Ctl+F11
   - $$mdi:apple-keyboard-option$$
   - FUNC
@@ -60,8 +60,8 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:gesture-tap-hold$$'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - NUM
   - RGUI
