@@ -100,11 +100,11 @@
 
         SYM2 {
             bindings = <
-&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans      &trans       &trans    &trans           &trans        &trans
-&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans      &kp PERCENT  &trans    &trans           &arrow2       &trans
-&trans  &trans      &trans  &trans  &trans  &trans    &trans  &kp DOLLAR  &kp HASH     &kp LBKT  &kp RBKT         &kp COLON     &kp DOUBLE_QUOTES
-&trans  &kp DELETE  &trans  &trans  &trans  &trans    &trans  &kp GRAVE   &kp AT_SIGN  &kp LBRC  &kp RIGHT_BRACE  &kp QUESTION  &kp FSLH
-&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans      &trans       &trans    &trans           &trans
+&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans      &trans       &trans         &trans           &trans        &trans
+&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans      &kp PERCENT  &trans         &trans           &arrow2       &trans
+&trans  &trans      &trans  &trans  &trans  &trans    &trans  &kp DOLLAR  &kp HASH     &kp LBKT       &kp RBKT         &kp COLON     &kp DOUBLE_QUOTES
+&trans  &kp DELETE  &trans  &trans  &trans  &trans    &trans  &kp GRAVE   &kp AT_SIGN  &kp LBRC       &kp RIGHT_BRACE  &kp QUESTION  &kp FSLH
+&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans      &trans       &kp LS(ENTER)  &trans           &trans
             >;
 
             label = "SYM2";
