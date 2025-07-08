@@ -119,7 +119,7 @@
 &trans     &trans  &trans  &kp C   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "GAME";
+            label = "GAMEC";
         };
 
         GAMEQ {
@@ -130,6 +130,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &kp Q   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "GAMEQ";
         };
 
         NUM {
