@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: GAMEQ, h: toggle}
   - N
   - M
   - {t: ',', s: <}
