@@ -10,7 +10,7 @@ manifest:
       url-base: https://github.com/GPeye
       name: badjeff
       url-base: https://github.com/badjeff
-      name: nrfconnect
+    - name: nrfconnect
       url-base: https://github.com/nrfconnect
   projects:
     - name: mario-peripheral-animation
@@ -20,14 +20,14 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-      name: zmk-feature-split-esb
+    - name: zmk-feature-split-esb
       remote: badjeff
       revision: main  
-      name: sdk-nrf
+    - name: sdk-nrf
       remote: nrfconnect
       revision: v2.6.4 # zephyr v3.5.99
       path: nrf
-      name: nrfxlib
+    - name: nrfxlib
       remote: nrfconnect
       revision: v2.6.4
       repo-path: sdk-nrfxlib
